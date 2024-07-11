@@ -20,7 +20,7 @@ html {
 
 .form {
     width: 60rem;
-    height: 40rem;
+    height: 45rem;
     background-color: #eee;
     border-radius: 3rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
@@ -97,6 +97,20 @@ html {
     transition: left 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.signup-form {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 6rem;
+    align-items: center;
+    z-index: 0;
+    transition: left 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .container.change .signin-form {
     left: 24rem;
 }
@@ -150,7 +164,7 @@ html {
     font-size: 1.2rem;
 }
 
-.button-rightside {
+.signin-button {
     color: #eee;
     background-color: #3ab19b;
     border: none;
