@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 60rem;
+    height: 40rem;
+    background-color: #eee;
+    border-radius: 3rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.green-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #3ab19b, #4cbf91);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 3rem;
+    border-top-left-radius: 3rem;
+    z-index: 50;
+    transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .green-bg {
+    width: 40%;
+}
+
+.button-leftside {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: 0.1rem solid #eee;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #eee;
+    cursor: pointer;
+}
+
+.welcome-div {
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    left: -25rem;
+    text-align: center;
+    color: #eee;
+    transition: left 0.8s;
+}
+
+.container.change .welcome-div {
+    left: 2rem;
+}
+
+.welcometxt {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+}
+
+.signin-form {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 6rem;
+    align-items: center;
+    z-index: 0;
+    transition: left 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .signin-form {
+    left: 24rem;
+}
+
+.signin-form h1 {
+    color: #3ab19b;
+    font-size: 3rem;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media i {
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid black;
+    margin: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form p {
+    font-size: 1.3rem;
+}
+
+.signin-input {
+    position: relative;
+}
+
+.signin-input input {
+    border: none;
+    background-color: #ddd;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.signin-input i {
+    position: absolute;
+    top: 1.6rem;
+    left: 0.7rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.button-rightside {
+    color: #eee;
+    background-color: #3ab19b;
+    border: none;
+    border: 0.1rem solid #eee;
+    width: 10rem;
+    height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-radius: 15%;
+    cursor: pointer;
+}
