@@ -45,7 +45,7 @@ html {
     width: 40%;
 }
 
-.button-leftside {
+.show-signup-button {
     position: absolute;
     top: 60%;
     left: 30%;
@@ -110,16 +110,18 @@ html {
     display: flex;
 }
 
-.social-media i {
+.social-media a {
     width: 3rem;
     height: 3rem;
     border: 0.1rem solid black;
     margin: 1rem;
     border-radius: 50%;
     font-size: 2rem;
+    color: rgb(63, 63, 63);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .signin-form p {
