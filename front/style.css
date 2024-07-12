@@ -41,13 +41,29 @@ html {
     transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.container.change .green-bg {
+.container.change-signin-form .green-bg,
+.container.change-signin-form .green-bg {
     width: 40%;
 }
 
 .show-signup-button {
     position: absolute;
-    top: 60%;
+    top: 65%;
+    left: 30%;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: 0.1rem solid #eee;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #eee;
+    cursor: pointer;
+}
+
+.show-signin-button {
+    position: absolute;
+    top: 80%;
     left: 30%;
     width: 10rem;
     height: 5rem;
@@ -86,7 +102,7 @@ html {
 .signin-form {
     height: 100%;
     position: absolute;
-    left: 0;
+    left: -8rem;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -94,13 +110,13 @@ html {
     margin: 0 6rem;
     align-items: center;
     z-index: 0;
-    transition: left 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: left 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .signup-form {
     height: 100%;
     position: absolute;
-    left: 0;
+    left: -8rem;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -108,14 +124,33 @@ html {
     margin: 0 6rem;
     align-items: center;
     z-index: 0;
-    transition: left 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: left 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.container.change .signin-form {
+.container.change-signin-form .signin-form {
     left: 24rem;
 }
 
-.signin-form h1 {
+.container.change-signup-form .signup-form {
+    left: 24rem;
+}
+
+.container.switch-bettwen-in-up .signin-form {
+    animation: fadeOut 1.5s ease;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.container.switch-bettwen-in-up .signup-form .signin-form h1 {
     color: #3ab19b;
     font-size: 3rem;
 }
