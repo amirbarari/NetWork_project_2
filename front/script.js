@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 
 const signupBtn = document.querySelector(".show-signup-button");
 const signinBtn = document.querySelector(".show-signin-button");
-let page_state = "";
+
 let is_signin_form_close = true;
 let is_signup_form_close = true;
 
@@ -32,14 +32,8 @@ function signup_click() {
     else {
         is_signin_form_close = true;
         is_signup_form_close = false;
-
         container.classList.remove("switch-to-signin");
         container.classList.toggle("switch-to-signup");
         Log(is_signin_form_close, is_signup_form_close);
     }
-}
-
-function Log(is, iss) {
-    is ? console.log("ture.") : console.log("false.");
-    iss ? console.log("ture.") : console.log("false.");
 }

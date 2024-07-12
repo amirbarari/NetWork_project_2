@@ -86,7 +86,7 @@ html {
     transition: left 0.8s;
 }
 
-.container.change .welcome-div {
+.container.change-signup-form .welcome-div {
     left: 2rem;
 }
 
@@ -136,9 +136,7 @@ html {
 }
 
 .container.switch-to-signin .signup-form {
-    /* animation: fadeOut 1.5s ease;
-    opacity: 0; */
-    left: -8rem;
+    opacity: 0;
 }
 
 .container.switch-to-signin .signin-form {
@@ -146,29 +144,12 @@ html {
 }
 
 .container.switch-to-signup .signin-form {
-    /* animation: fadeOut 1.5s ease;
-    opacity: 0; */
-    left: -8rem;
+    opacity: 0;
 }
 
 .container.switch-to-signup .signup-form {
     left: 24rem;
 }
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-/* .container.switch-bettwen-in-up .signup-form .signin-form h1 {
-    color: #3ab19b;
-    font-size: 3rem;
-} */
 
 .social-media {
     display: flex;
@@ -196,6 +177,10 @@ html {
     position: relative;
 }
 
+.signup-input {
+    position: relative;
+}
+
 .signin-input input {
     border: none;
     background-color: #ddd;
@@ -203,6 +188,17 @@ html {
     height: 3rem;
     border-radius: 0.8rem;
     padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.signup-input input {
+    border: none;
+    background-color: #ddd;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    padding-left: 2rem;
     font-size: 1.4rem;
 }
 
@@ -214,7 +210,16 @@ html {
     font-size: 1.2rem;
 }
 
-.signin-button {
+.signup-input i {
+    position: absolute;
+    top: 1.1rem;
+    left: 0.4rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.signin-button,
+.signup-button {
     color: #eee;
     background-color: #3ab19b;
     border: none;
