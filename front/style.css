@@ -42,7 +42,7 @@ html {
 }
 
 .container.change-signin-form .green-bg,
-.container.change-signin-form .green-bg {
+.container.change-signup-form .green-bg {
     width: 40%;
 }
 
@@ -135,9 +135,24 @@ html {
     left: 24rem;
 }
 
-.container.switch-bettwen-in-up .signin-form {
-    animation: fadeOut 1.5s ease;
-    opacity: 0;
+.container.switch-to-signin .signup-form {
+    /* animation: fadeOut 1.5s ease;
+    opacity: 0; */
+    left: -8rem;
+}
+
+.container.switch-to-signin .signin-form {
+    left: 24rem;
+}
+
+.container.switch-to-signup .signin-form {
+    /* animation: fadeOut 1.5s ease;
+    opacity: 0; */
+    left: -8rem;
+}
+
+.container.switch-to-signup .signup-form {
+    left: 24rem;
 }
 
 @keyframes fadeOut {
@@ -150,10 +165,10 @@ html {
     }
 }
 
-.container.switch-bettwen-in-up .signup-form .signin-form h1 {
+/* .container.switch-bettwen-in-up .signup-form .signin-form h1 {
     color: #3ab19b;
     font-size: 3rem;
-}
+} */
 
 .social-media {
     display: flex;
