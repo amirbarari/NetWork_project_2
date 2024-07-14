@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f54eff2-447b-4f24-9417-a7211b7c626c" name="Changes" comment="" />
+    <list default="true" id="3f54eff2-447b-4f24-9417-a7211b7c626c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependent/scripts/log-rig-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependent/styles/log-rig-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileApp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/profileApp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileApp/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/profileApp/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log-rig.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720945492760</updated>
-      <workItem from="1720945503975" duration="448000" />
+      <workItem from="1720945503975" duration="6144000" />
     </task>
     <servers />
   </component>
