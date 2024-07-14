@@ -10,3 +10,7 @@ def log_rig():
 @app.route("/profile/<user_name>")
 def user_profile(user_name):
     return f"user with username : {user_name} loged in"
+
+@app.route("/Admin")
+def Admin_page():
+    return "welcome admin :)"
