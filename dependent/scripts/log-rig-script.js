@@ -48,7 +48,7 @@ function title_state() {
         container.classList.toggle("hide-title1");
     }
     else {
-        container.classList.remove("hide-title");
-        container.classList.remove("hide-title1");
+        container.classList.toggle("hide-title");
+        container.classList.toggle("hide-title1");
     }
 }
