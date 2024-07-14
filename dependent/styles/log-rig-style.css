@@ -262,7 +262,8 @@ h1.elegantshadow1 {
     text-rendering: optimizeLegibility;
     top: 5rem;
     left: 8rem;
-    color: #131313;
+    /* color: #131313; */
+    color: rgb(181, 178, 178);
     letter-spacing: .15em;
     text-shadow:
         1px -1px 0 #178b4f,
