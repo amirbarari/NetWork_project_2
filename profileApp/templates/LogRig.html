@@ -30,7 +30,7 @@
                     <button class="show-signup-button">sign up</button>
                 </div>
             </div>
-            <form action="">
+            <form  method="POST">
                 <div class="signin-form">
                     <h1>Log-in Account</h1>
                     <div class="social-media">
@@ -40,65 +40,71 @@
                         <a class="fab fa-telegram" target="_blank" href="https://t.me/Lo0111011001100101"></a>
                     </div>
                     <p>Enter your info to log-in</p>
-                    <div class="signin-input">
+                         <input type="hidden" name="form-name" value="sign-in-form"><!--for recognize type of form-->
+                        <div class="signin-input">
+                            <i class="fas fa-user"></i>
+                            <input name="user-name" type="text" placeholder="user name" class="">
+                        </div>
+                        <div class="signin-input">
+                            <i class="fas fa-lock"></i>
+                            <input name="password" type="password" placeholder="password" class="">
+                        </div>
+                        <button class="signin-button" type="submit">sign in</button>
+
+                    </div>
+                </form>
+            <form  method="POST">
+                <div class="signup-form">
+                    <h1>Create Account</h1>
+                    <div class="social-media">
+                        <a class="fab fa-linkedin-in" target="_blank"
+                            href="https://www.linkedin.com/in/amirmohammad-barari-6291bb269/"></a>
+                        <a class="fab fa-github" target="_blank" href="https://github.com/amirbarari"></a>
+                        <a class="fab fa-telegram" target="_blank" href="https://t.me/Lo0111011001100101"></a>
+                    </div>
+                    <p>complete info to register</p>
+                    <input type="hidden" name="form-name" value="sign-up-form">
+                    <div class="signup-input">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="user name" class="">
+                        <input type="text" placeholder="name" class="" name="name">
                     </div>
-                    <div class="signin-input">
+                    <div class="signup-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="email" class="" name="email">
+                    </div>
+                    <div class="signup-input">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="password" class="">
+                        <input type="password" placeholder="password" class="" name="password">
                     </div>
-                    <button class="signin-button" type="submit">sign in</button>
+                    <div class="signup-input">
+                        <i class="fa fa-university"></i>
+                        <input type="text" placeholder="organization" class="" name="organization">
+                    </div>
+                    <div class="signup-input">
+                        <i class="fa fa-address-book-o"></i>
+                        <input type="text" placeholder="address" class="" name="address">
+                    </div>
+                    <div class="signup-input">
+                        <i class="fa fa-dot-circle-o"></i>
+                        <input type="text" placeholder="city" class="" name="city">
+                    </div>
+                    <div class="signup-input">
+                        <i class="fa fa-pagelines"></i>
+                        <input type="text" placeholder="satate" class="" name="state">
+                    </div>
+                    <div class="signup-input">
+                        <i class="fa fa-globe"></i>
+                        <input type="text" placeholder="country" class="" name="country">
+                    </div>
+                    <div class="signup-input">
+                        <i class="fa fa-address-card-o"></i>
+                        <input type="text" placeholder="postal code" class="" name="postalcode">
+                    </div>
+                    <button class="signup-button">sign in</button>
                 </div>
             </form>
-            <div class="signup-form">
-                <h1>Create Account</h1>
-                <div class="social-media">
-                    <a class="fab fa-linkedin-in" target="_blank"
-                        href="https://www.linkedin.com/in/amirmohammad-barari-6291bb269/"></a>
-                    <a class="fab fa-github" target="_blank" href="https://github.com/amirbarari"></a>
-                    <a class="fab fa-telegram" target="_blank" href="https://t.me/Lo0111011001100101"></a>
-                </div>
-                <p>complete info to register</p>
-                <div class="signup-input">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="name" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="email" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="password" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-university"></i>
-                    <input type="text" placeholder="organization" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-address-book-o"></i>
-                    <input type="text" placeholder="address" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-dot-circle-o"></i>
-                    <input type="text" placeholder="city" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-pagelines"></i>
-                    <input type="text" placeholder="satate" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-globe"></i>
-                    <input type="text" placeholder="country" class="">
-                </div>
-                <div class="signup-input">
-                    <i class="fa fa-address-card-o"></i>
-                    <input type="text" placeholder="postal code" class="">
-                </div>
-                <button class="signup-button">sign in</button>
-            </div>
         </div>
+
     </div>
 
     <script src="{{ url_for('static', filename='LogRig-script.js')}}" ></script>

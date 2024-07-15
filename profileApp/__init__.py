@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ProfileApp.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 dataBase = SQLAlchemy(app)
 
 with app.app_context():
